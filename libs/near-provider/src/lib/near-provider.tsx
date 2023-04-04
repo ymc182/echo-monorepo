@@ -79,7 +79,11 @@ export function NearProvider({
     const _selector = await setupWalletSelector({
       network: NETWORK_ID,
       debug: false,
-      modules: [setupSender(), setupMeteorWallet()],
+      modules: [
+        ...(await setupDefaultWallets()),
+        setupSender(),
+        setupMeteorWallet(),
+      ],
     });
     const _modal = setupModal(_selector, {
       contractId: CONTRACT_ID,
