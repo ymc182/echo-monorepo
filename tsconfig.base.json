@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@echo-monorepo/boom-chart": ["libs/boom-chart/src/index.ts"],
       "@echo-monorepo/near-provider": ["libs/near-provider/src/index.ts"]
     }
   },

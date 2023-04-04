@@ -1,0 +1,79 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+@keyframes screen-shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-3px, 0);
+  }
+  20% {
+    transform: translate(3px, 0);
+  }
+  30% {
+    transform: translate(-3px, 0);
+  }
+  40% {
+    transform: translate(3px, 0);
+  }
+  30% {
+    transform: translate(-3px, 0);
+  }
+  60% {
+    transform: translate(3px, 0);
+  }
+  70% {
+    transform: translate(-3px, 0);
+  }
+  80% {
+    transform: translate(3px, 0);
+  }
+  90% {
+    transform: translate(-3px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-33px);
+    opacity: 0.1;
+  }
+}
+
+.flashing-dot {
+  animation: flashing 1s infinite;
+}
+
+.float-up {
+  animation: float-up 1.5s infinite;
+}
+
+.screen-shake {
+  animation: screen-shake 0.5s infinite;
+}
